@@ -1,13 +1,13 @@
 from checkmate import checkmate
 
 def main():
-    # กรณี1 ไม่มีศัตรู King รอด (Fail)
+    #(Fail)
     board1 = """\
 ..
 .K\
 """
 
-    # กรณี2 โดนRookแนวตรง (Success)
+    #(Success)
     board2 = """\
 R...
 .K..
@@ -15,7 +15,7 @@ R...
 ....\
 """
 
-    # กรณี3 โดนQueenแนวทแยง แต่Pawnบัง(Fail)
+    #(Fail)
     board3 = """\
 Q.....
 ......
@@ -25,13 +25,13 @@ Q.....
 ......\
 """
 
-    # กรณี4 King 2 ตัว (ไม่printอะไรเลย)
+    #(ไม่printอะไรเลย)
     board4 = """\
 K.
 .K\
 """
 
-    # กรณี5 โดนPawnแนวทแยง (Success)
+    #(Success)
     board5 = """\
 ....
 .K..
@@ -39,12 +39,13 @@ K.
 ....\
 """
 
-    # กรณี6 บอร์ดไม่ใช่สี่เหลี่ยมจัตุรัส (ไม่printอะไรเลย)
+    #(ไม่printอะไรเลย)
     board6 = """\
 ...
 .K.\
 """
 
+    #(Success)
     board7 = """\
 xxxxx
 xxxxx
@@ -53,6 +54,7 @@ xxxxx
 xxxxx\
 """
 
+    #(Success)
     board8 = """\
 B????
 ?????
@@ -60,7 +62,8 @@ B????
 ?????
 ????K\
 """
-
+    
+    #(Success)
     board9 = """\
 nnQnn
 nnnnn
@@ -69,6 +72,7 @@ nnnnn
 nnKnn\
 """
 
+    #(Success)
     board10 = """\
 BYvx2N7
 f-+x19E
