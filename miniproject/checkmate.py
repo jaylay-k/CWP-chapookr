@@ -45,7 +45,6 @@ def straight_check(clean_lines, king_r, king_c, size):
         current_r = king_r + step_r   
         current_c = king_c + step_c
         
-        # เดินหน้าจนกว่าจะตกขอบ
         while current_r >= 0 and current_r < size and current_c >= 0 and current_c < size:
             piece = clean_lines[current_r][current_c]
             if piece == 'R' or piece == 'Q': 
